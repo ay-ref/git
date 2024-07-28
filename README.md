@@ -5,35 +5,52 @@
 
 ## working in local
 
-_**Problem.**_
-having 2 file in 2 branch in same time with easy navigation
+- having 2 file in 2 branch in same time with easy navigation
 and easy changing each!
+  - for this you can duplicate your git project with all
+  git informations, one of this replicas is for navigation
+  between different git nodes and watching them and another
+  is for work that you currently on.
 
-_**Solution.**_
-for this you can duplicate your git project with all
-git informations, one of this replicas is for navigation
-between different git nodes and watching them and another
-is for work that you currently on.
-
-_**Problem.**_
-we want to move our current change from current branch to
+- we want to move our current change from current branch to
 another branch!
 
-_**Solution.**_
+  - first save your changes into the stash stack:
 
-- first save your changes into the stash stack:
+    ```shell
+    git stash save
+    ```
+
+  - go to the branch you want:
+
+    ```shell
+    git checkout <wanted-branch>
+    ```
+
+  - pop your changes from stash stack:
+
+    ```shell
+    git stash pop
+    ```
+
+- removing current changes
+
   ```shell
-  git stash save
+  git restore <path>
   ```
-- go to the branch you want:
+
+- removing current changes added to stage
 
   ```shell
-  git checkout <wanted-branch>
+  git restore --staged <path>
   ```
+  
+- removing untracted files
 
-- pop your changes from stash stack:
   ```shell
-  git stash pop
+  git clean -fd
   ```
 
+> -f means files, -d means directories
+  
 ## working with remote
