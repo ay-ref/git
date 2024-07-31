@@ -1,7 +1,8 @@
 # Git
 
-- [working in local](#working-in-local)
-- [working with remote](#working-with-remote)
+- toc
+  - [working in local](#working-in-local)
+  - [working with remote](#working-with-remote)
 
 ## working in local
 
@@ -33,6 +34,12 @@ another branch!
     git stash pop
     ```
 
+- see the stashes list:
+
+  ```shell
+  git stash list
+  ```
+  
 - removing current changes
 
   ```shell
