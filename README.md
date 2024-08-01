@@ -59,5 +59,11 @@ another branch!
   ```
 
 > -f means files, -d means directories
+
+- remove files from git to add them to `.gitignore`
+
+  ```shell
+  git rm --cached <path>
+  ```
   
 ## working with remote
