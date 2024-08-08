@@ -1,10 +1,12 @@
 # Git
 
 - toc
-  - [working in local](#working-in-local)
+  - [working in local](#local)
   - [working with remote](#working-with-remote)
 
-## working in local
+## Local
+
+### Changes
 
 - having 2 file in 2 branch in same time with easy navigation
 and easy changing each!
@@ -65,5 +67,28 @@ another branch!
   ```shell
   git rm --cached <path>
   ```
+
+### Branches
+
+- when you create a branch, git make copies of the node that you are now on it.
+
+- how to delete a branch:
+
+  ```shell
+  git branch -d <branch-name>
+  ```
+
+  ```shell
+  git branch -D <branch-name>
+  ```
+
+  > `-D` is equal to `-fd`!
   
-## working with remote
+## Remote
+
+- see git current server remotes
+
+  ```shell
+  git remote -v
+  ```
+  
