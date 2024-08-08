@@ -1,8 +1,8 @@
 # Git
 
 - toc
-  - [working in local](#local)
-  - [working with remote](#working-with-remote)
+  - [Local](#local)
+  - [Remote](#remote)
 
 ## Local
 
