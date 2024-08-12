@@ -41,6 +41,14 @@ another branch!
   ```shell
   git stash list
   ```
+
+- how to stash just single file
+
+  ```shell
+  git stash -- <filename>
+  ```
+
+  > if file is untracted first do to trackted :)
   
 - removing current changes
 
