@@ -92,3 +92,14 @@ another branch!
   git remote -v
   ```
   
+### Conflict
+
+- solve binary file conflict
+
+  ```shell
+  git checkout --theirs -- path/to/conflicted-file.txt
+  ```
+
+  ```shell
+  git checkout --ours -- path/to/conflicted-file.txt
+  ```
