@@ -99,6 +99,18 @@ another branch!
   ```shell
   git remote -v
   ```
+
+- change remote
+
+  ```shell
+  git remote set-url origin new.git.url/here
+  ```
+
+- github remote format (ssh format)
+
+  ```shell
+  git@github:username/reponame.git
+  ```
   
 ### Conflict
 
