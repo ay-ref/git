@@ -111,6 +111,12 @@ another branch!
   ```shell
   git@github:username/reponame.git
   ```
+
+- remove a git branch from remote
+
+  ```shell
+  git push origin -d <branchname>
+  ```
   
 ### Conflict
 
