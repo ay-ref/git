@@ -80,6 +80,18 @@ another branch!
 
 - when you create a branch, git make copies of the node that you are now on it.
 
+- create new branch
+
+  ```shell
+  git branch <branch-name>
+  ```
+
+- create new branch and switch on it
+
+  ```shell
+  git checkout -b <branch-name>
+  ```
+
 - how to delete a branch:
 
   ```shell
