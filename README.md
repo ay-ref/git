@@ -86,6 +86,8 @@ another branch!
   
 ## Remote
 
+> always try to push fast if you add or modify a `.gitignore` file!!!
+
 - see git current server remotes
 
   ```shell
