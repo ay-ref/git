@@ -41,6 +41,14 @@ another branch!
   ```shell
   git stash list
   ```
+
+- how to stash just single file
+
+  ```shell
+  git stash -- <filename>
+  ```
+
+  > if file is untracted first do to trackted :)
   
 - removing current changes
 
@@ -92,6 +100,24 @@ another branch!
 
   ```shell
   git remote -v
+  ```
+
+- change remote
+
+  ```shell
+  git remote set-url origin new.git.url/here
+  ```
+
+- github remote format (ssh format)
+
+  ```shell
+  git@github:username/reponame.git
+  ```
+
+- remove a git branch from remote
+
+  ```shell
+  git push origin -d <branchname>
   ```
   
 ### Conflict
