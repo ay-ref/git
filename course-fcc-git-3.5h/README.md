@@ -129,3 +129,67 @@ that runs in some specific time like before/after commit or before/after push
 
 - you can isolate (packed) your changes sequence by branches
 - git contains nodes that each nodes show state of codes to that time
+
+- each branch specified with a name
+
+- default branch is `master` in git, but for
+some reason we always rename it to `main` branch with below command
+
+- rename an existing branch
+
+  ```shell
+  git branch -M newname
+  ```
+  
+- how to see current branch
+
+  ```shell
+  git branch
+  ```
+  
+- how to create new branch
+
+  ```shell
+  git branch branchname
+  ```
+
+- branch is applied to the current node
+  
+- change current branch
+
+  ```shell
+  git checkout branchname
+  ```
+
+- you can change the branch just if you have no change currently
+  
+> when we say that we are in main branch we usually
+> mean that we are in the last node of main branch!,
+> and a node in one branch is different and also you can
+> checkout to it by its id!
+
+- `HEAD` is the specifier for current node of changes
+
+- merge
+  - fast forward
+  - not fast forward
+
+- fast forward merge
+  - when we merge with a target branch that is not changed after creation of
+  current branch our history is linear!
+  - in fast forward merge we have not any ***conflicts***
+  - ***it does not make new merge commit***
+
+- not fast forward merge
+  - target branch and also current branch both
+  has some changes and usually it is possible to have
+  some ***conflicts*** and we should merge manually and then commit!
+  - ***it makes new merge commit***
+  - merge commit is a common commit for both branch (target and the current)!
+
+- delete a branch
+
+  ```shell
+  git branch -d branchname
+  ```
+  
