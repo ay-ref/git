@@ -4,7 +4,23 @@
   - [Local](#local)
   - [Remote](#remote)
 
+## General
+
+- node specifier
+  - HEAD
+  - HEAD~2, HEAD^3 ...
+  - commit id (node hash)
+  - branch name (indicator of last node of the branch)
+
 ## Local
+
+- git does not see `.gitignore` specified pathes
+
+- changing levels
+  - working tree
+    - untracked
+    - tracked
+  - staged
 
 ### Changes
 
@@ -35,6 +51,8 @@ another branch!
     ```shell
     git stash pop
     ```
+  
+  - !!!! remember to pop your stash when you back to branch :/ !!!!
 
 - see the stashes list:
 

@@ -192,4 +192,115 @@ some reason we always rename it to `main` branch with below command
   ```shell
   git branch -d branchname
   ```
+
+- see the changes during time
+
+  ```shell
+  git diff filepath
+  ```
+  
+- you should consider the scope that you want to run your command
+- usually command as default runs in ***working tree tracked files***
+- for running command on staged mode you should specified `--staged`
+  - examples
+
+    ```shell
+    git diff --staged
+    ```
+
+- `git diff` does diff between one file over time!
+- linux `diff` command does diff between 2 different file in same time!
+
+- git diff compare 2 files a(old) and b(newer)
+  - `-` shows the file a
+  - `+` shows change in file b
+
+- git diff between 2 nodes
+
+  ```shell
+  git diff firstid..secondid
+  ```
+  
+- when you want to fix a tiny bug in another branch
+but your current branch changes are not commitable yet
+you should use stash
+
+- stash your current changes (staged and tracked working tree)
+
+  ```shell
+  git stash
+  ```
+
+- backing changes
+
+  ```shell
+  git stash pop
+  ```
+  
+- see the stash list
+
+  ```shell
+  git stash list
+  ```
+  
+- remove all current changes without saving it!
+
+  ```shell
+  git restore filepath
+  ```
+  
+## ep - rebase :/
+
+- you can add a branch changes to another branch
+with
+  - merge
+  - rebase
+
+- rebase in first glance is dangerous,
+because it rewrite history!
+
+- rebase adds your current branch history to target branch
+and make target linear by current branch history changes
+
+- !!!! the dangerous approach is where you are in main/master
+branch and run rebase command !!!!
+
+- rebase command should run from side branch
+
+- merge a branch into another branch (go to your changed branch)
+
+  ```shell
+  git merge targetbranch
+  ```
+
+- rebase a branch in another branch (go to your changed branch)
+
+  ```shell
+  git rebase targetbranch
+  ```
+  
+- rebase is possible to get into conflict then you should
+consider one of below commands to make rebase complete
+
+  ```shell
+  git rebase --continue
+  git rebase --skip
+  ```
+
+## ep - github
+
+- you should create account
+- for your account you should create sshkey
+to connect your repositories by [LINK THAT IS HERE](https://gist.github.com/qin-yu/bc26a2d280ee2e93b2d7860a1bfbd0c5)
+- make a repository
+
+- commands
+
+  ```shell
+  git clone repourl
+  ```
+
+  ```shell
+  
+  ```
   
