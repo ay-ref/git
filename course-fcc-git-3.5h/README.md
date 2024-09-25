@@ -294,13 +294,52 @@ consider one of below commands to make rebase complete
 to connect your repositories by [LINK THAT IS HERE](https://gist.github.com/qin-yu/bc26a2d280ee2e93b2d7860a1bfbd0c5)
 - make a repository
 
-- commands
+- clone a repository from remote
 
   ```shell
   git clone repourl
   ```
 
+- see the current remote to push/pull
+
   ```shell
-  
+  git remote -v
   ```
+
+- add remote
+
+  ```shell
+  git remote add remotename remoteurl
+  ```
+
+- remove remote
+
+  ```shell
+  git remote remove name
+  ```
+
+- rename remote
+
+  ```shell
+  git rename oldname newname
+  ```
+
+- push your changes
+
+  ```shell
+  git push remotename branchname
+  ```
+
+  - you can save your branchname that pushed once and later
+  just command `git push` with `-u` (set upstream) flag
+
+    ```shell
+    git push -u remotename branchname
+    ```
+
+- also you should make experience with github contribution
+
+---
+
+## End
   
