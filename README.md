@@ -17,6 +17,7 @@
 - git does not see `.gitignore` specified pathes
 
 - changing levels
+  - ignored
   - working tree
     - untracked
     - tracked
@@ -80,7 +81,7 @@ another branch!
   git restore --staged <path>
   ```
   
-- removing untracted files
+- removing untrackted files
 
   ```shell
   git clean -fd
