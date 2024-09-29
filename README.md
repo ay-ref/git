@@ -161,3 +161,15 @@ another branch!
   ```shell
   git checkout --ours -- path/to/conflicted-file.txt
   ```
+
+- push conflict (**DANGEROUS**)
+
+  ```shell
+  git push --force-with-lease
+  ```
+  
+  - you should not use this command
+
+    ```shell
+    git push --force
+    ```
