@@ -95,6 +95,11 @@ another branch!
   git rm --cached <path>
   ```
 
+- the only place that you can see the dangling commits!!!
+  ```shell
+  git reflog
+  ```
+
 ### Branches
 
 - when you create a branch, git make copies of the node that you are now on it.
