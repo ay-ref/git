@@ -8,7 +8,7 @@
 
 - node specifier
   - HEAD
-  - HEAD~2, HEAD^3 ...
+  - HEAD~2, HEAD^^^, HEAD@{2}, ...
   - commit id (node hash)
   - branch name (indicator of last node of the branch)
 
