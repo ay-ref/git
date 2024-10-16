@@ -8,7 +8,7 @@
 
 - node (commit) specifier
   - HEAD
-  - HEAD~2, HEAD^3 ...
+  - HEAD~2, HEAD^^^, HEAD@{2}, ...
   - commit id (node hash)
   - branch name (indicator of last node of the branch)
 
@@ -93,6 +93,11 @@ another branch!
 
   ```shell
   git rm --cached path
+  ```
+
+- the only place that you can see the dangling commits!!!
+  ```shell
+  git reflog
   ```
 
 ### Branches
