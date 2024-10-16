@@ -6,7 +6,7 @@
 
 ## General
 
-- node specifier
+- node (commit) specifier
   - HEAD
   - HEAD~2, HEAD^3 ...
   - commit id (node hash)
@@ -44,7 +44,7 @@ another branch!
   - go to the branch you want:
 
     ```shell
-    git checkout <wanted-branch>
+    git checkout wantedbranch
     ```
 
   - pop your changes from stash stack:
@@ -64,7 +64,7 @@ another branch!
 - how to stash just single file
 
   ```shell
-  git stash -- <filename>
+  git stash -- filename
   ```
 
   > if file is untracted first do to trackted :)
@@ -72,13 +72,13 @@ another branch!
 - removing current changes
 
   ```shell
-  git restore <path>
+  git restore path
   ```
 
 - removing current changes added to stage
 
   ```shell
-  git restore --staged <path>
+  git restore --staged path
   ```
   
 - removing untrackted files
@@ -92,7 +92,7 @@ another branch!
 - remove files from git to add them to `.gitignore`
 
   ```shell
-  git rm --cached <path>
+  git rm --cached path
   ```
 
 ### Branches
@@ -102,23 +102,32 @@ another branch!
 - create new branch
 
   ```shell
-  git branch <branch-name>
+  git branch branchname
   ```
 
 - create new branch and switch on it
 
   ```shell
-  git checkout -b <branch-name>
+  git checkout -b branchname
   ```
 
+- checkout to a commit
+
+  ```shell
+  git checkout commitspecifier
+  ```
+
+> when you checkout to a commit you are coding to a dangling branch!!! \
+> Detached HEAD is a dangling branch
+  
 - how to delete a branch:
 
   ```shell
-  git branch -d <branch-name>
+  git branch -d branchname
   ```
 
   ```shell
-  git branch -D <branch-name>
+  git branch -D branchname
   ```
 
   > `-D` is equal to `-fd`!
@@ -148,7 +157,7 @@ another branch!
 - remove a git branch from remote
 
   ```shell
-  git push origin -d <branchname>
+  git push origin -d branchname
   ```
   
 ### Conflict
