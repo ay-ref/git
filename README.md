@@ -96,6 +96,7 @@ another branch!
   ```
 
 - the only place that you can see the dangling commits!!!
+
   ```shell
   git reflog
   ```
