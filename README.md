@@ -6,6 +6,9 @@
 
 ## General
 
+- setup git on new machine
+  - [LINK](https://gist.github.com/qin-yu/bc26a2d280ee2e93b2d7860a1bfbd0c5)
+
 - node (commit) specifier
   - HEAD
   - HEAD~2, HEAD^^^, HEAD@{2}, ...
