@@ -192,3 +192,12 @@ another branch!
     ```shell
     git push --force
     ```
+
+- usually you can't search in commits by commit message directly in remotes like `github.com`
+  you should clone the repo and search with below command:
+
+    ```shell
+    git log -g --grep=yourtext
+    ```
+
+  - after finding the commit id, you can go to search in remote site.
