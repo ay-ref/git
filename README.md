@@ -168,6 +168,12 @@ another branch!
   ```shell
   git push origin -d branchname
   ```
+
+- git pull: connection refused!
+
+  ```shell
+  unset HTTP_PROXYFTP_PROXY ALL_PROXY NO_PROXY HTTPS_PROXY HTTP_PROXY FTP_PROXY
+  ```
   
 ### Conflict
 
