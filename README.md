@@ -143,11 +143,13 @@ another branch!
   
 ## Local as Remote
 
-- on remote folder
+- create git remote folder
 
   ```sh
-  git config receive.denyCurrentBranch warn
+  git init --bare repoRemote.git
   ```
+
+  > you can use it just by cloning it, you can commit, push, anything ...
   
 ## Remote
 
