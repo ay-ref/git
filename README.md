@@ -141,6 +141,14 @@ another branch!
 
   > `-D` is equal to `-fd`!
   
+## Local as Remote
+
+- on remote folder
+
+  ```sh
+  git config receive.denyCurrentBranch warn
+  ```
+  
 ## Remote
 
 > always try to push fast if you add or modify a `.gitignore` file!!!
