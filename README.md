@@ -143,6 +143,12 @@ another branch!
   
 ## Local as Remote
 
+- archive the git repo (considering .gitignore and ...)
+
+  ```sh
+  git archive --format=zip --output yourpath.zip yourbranch
+  ```
+
 - create git remote folder
 
   ```sh
