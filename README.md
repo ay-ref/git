@@ -143,6 +143,12 @@ another branch!
   
 ## Local as Remote
 
+- exFAT filesystem problem only solution (**BUT SECURITY PROBLEM**)
+
+  ```sh
+  git config --global --add safe.directory "*"
+  ```
+
 - archive the git repo (considering .gitignore and ...)
 
   ```sh
