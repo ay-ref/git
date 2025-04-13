@@ -141,6 +141,28 @@ another branch!
 
   > `-D` is equal to `-fd`!
   
+## Local as Remote
+
+- exFAT filesystem problem only solution (**BUT SECURITY PROBLEM**)
+
+  ```sh
+  git config --global --add safe.directory "*"
+  ```
+
+- archive the git repo (considering .gitignore and ...)
+
+  ```sh
+  git archive --format=zip --output yourpath.zip yourbranch
+  ```
+
+- create git remote folder
+
+  ```sh
+  git init --bare repoRemote.git
+  ```
+
+  > you can use it just by cloning it, you can commit, push, anything ...
+  
 ## Remote
 
 > always try to push fast if you add or modify a `.gitignore` file!!!
@@ -168,6 +190,12 @@ another branch!
   ```shell
   git push origin -d branchname
   ```
+
+- git pull: connection refused!
+
+  ```shell
+  unset HTTP_PROXYFTP_PROXY ALL_PROXY NO_PROXY HTTPS_PROXY HTTP_PROXY FTP_PROXY
+  ```
   
 ### Conflict
 
@@ -192,3 +220,12 @@ another branch!
     ```shell
     git push --force
     ```
+
+- usually you can't search in commits by commit message directly in remotes like `github.com`
+  you should clone the repo and search with below command:
+
+    ```shell
+    git log -g --grep=yourtext
+    ```
+
+  - after finding the commit id, you can go to search in remote site.
