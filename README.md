@@ -165,6 +165,10 @@ another branch!
   
 ## Remote
 
+- always try to have fast pull/push cycle!
+- before push always pull changes (conflict in remote merging is not interesting!)
+  - for this maybe you should first pull main branch and then merge it to your branch
+
 > always try to push fast if you add or modify a `.gitignore` file!!!
 
 - see git current server remotes
@@ -196,7 +200,13 @@ another branch!
   ```shell
   unset HTTP_PROXYFTP_PROXY ALL_PROXY NO_PROXY HTTPS_PROXY HTTP_PROXY FTP_PROXY
   ```
-  
+
+- if you have some commit ahead of remote main in your local main branch
+  - create new branch from you local main
+  - checkout from the local main
+  - `git fetch origin`
+  - `git checkout main`
+
 ### Conflict
 
 - solve binary file conflict
