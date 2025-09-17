@@ -10,10 +10,14 @@
   - [LINK](https://gist.github.com/qin-yu/bc26a2d280ee2e93b2d7860a1bfbd0c5)
 
 - node (commit) specifier
-  - HEAD (current node)
-  - HEAD~2, HEAD^^^, HEAD@{2}, ... (current node before/after)
-  - commit id (node hash)
-  - branch name (indicator of last node of the branch)
+  - `HEAD` - current node
+  - `HEAD~2`, `HEAD^^^`, `HEAD@{2}`, ... - current node before/after
+  - commit id - node hash
+  - `branchName` - indicator of last node of the branch
+
+- branch specifier
+  - `branchName`
+  - `-` or `@{-1}` - previous branch
 
 ## Local
 
