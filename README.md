@@ -145,6 +145,16 @@ another branch!
 
   > `-D` is equal to `-fd`!
   
+- see logs of current branch
+
+  ```shell
+  git log --oneline prevbranch..
+  ```
+
+  ```shell
+  git log --oneline prevbranch..HEAD
+  ```
+  
 ## Local as Remote
 
 - exFAT filesystem problem only solution (**BUT SECURITY PROBLEM**)
